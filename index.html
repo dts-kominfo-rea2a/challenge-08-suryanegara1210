@@ -43,19 +43,13 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-		output = document.createElement('li');
-		input = document.getElementById('todo-input').value;
-		if(input === ''){
-			alert('Input Activity is Null. Please Fill Activity in Box');
-		}
-		else {
-			result = document.createTextNode(input)
-		}
-		
-		output.appendChild(result)
-        document.getElementById('todo-output').append(output)
-        document.getElementById('todo-input').value=''
-	  }
+	      output = document.createElement('li');
+	      input = document.getElementById('todo-input').value;
+	      result = document.createTextNode(input)
+	      output.appendChild(result)
+        	document.getElementById('todo-output').append(output)
+        	document.getElementById('todo-input').value='';
+      }
 
       // TODO: register event onclick / addEventListener untuk button
       // akan menjalankan fungsi fnClickHandler
